@@ -1,0 +1,10 @@
+<!-- 输入框 -->
+<view class="input-flew" ><!-- catchtap="inputFocus" -->
+
+    <view class="input-view">
+        <input type='text' placeholder="评论" confirm-hold="{{true}}" bindinput='inputValue'  cursor-spacing='{{keyboardHeight}}' focus="{{focus||isFocus}}" value="{{inputVal}}" ></input>
+    </view>
+    <view class="~iconfont emojiIcon"></view>
+    <view class="sentBtn" style="background-color:{{sendBtnCss.backgroundColor}};border:{{sendBtnCss.border}};color:{{sendBtnCss.color}}" bindtap="_send">发送</view>
+</view>
+

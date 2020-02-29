@@ -1,0 +1,66 @@
+.set-item {
+    position: relative;
+    /* padding-top: 30rpx;
+    padding-bottom: 30rpx; */
+    padding-left: 100rpx;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.set-item-text {
+    padding: 30rpx 65rpx 30rpx 0;
+    border-bottom: 1rpx #f1f1f1 solid;
+    font-size: 30rpx;
+}
+
+.set-item:active {
+    background-color: #e5e5e5;
+}
+
+/* 是否有箭头 */
+
+.arrow {
+    /* background-color: rebeccapurple; */
+}
+
+.arrow::after {
+    position: absolute;
+    right: 20rpx;
+    content: "\e6ab";
+    font-size: 32rpx;
+    top: 33rpx;
+    color: #e6e6e6;
+}
+
+/* 右边文本 */
+
+.right-text {
+    float: right;
+    color: #ddd;
+}
+
+/* icon */
+
+
+.set-item-text:before{
+    /* content: "\e60f"; */
+    position: absolute;
+    left: 25rpx;
+    color: black;
+    font-size: 40rpx;
+}
+
+
+/* 全局变绿（完成色） */
+.green{
+    color: var(--green);
+}
+
+.green .right-text{
+    color: inherit;
+}
+
+.green .set-item-text:before{
+    color:var(--green);
+    font-weight: bold;
+}

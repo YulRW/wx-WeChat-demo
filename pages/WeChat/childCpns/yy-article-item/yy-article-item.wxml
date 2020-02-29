@@ -1,0 +1,62 @@
+<view class="pyqItem">
+    <view>
+        <!-- 用户头像 -->
+        <view class="avatarStyle">
+            <open-data type='userAvatarUrl'></open-data>
+        </view>
+    </view>
+    <view class="pyq-right">
+        <!-- 用户昵称 -->
+        <view class="userNickNameStyle ~active-gray">
+            <open-data type='userNickName'></open-data>
+        </view>
+        <!-- 文本内容 -->
+        <view class="pyqContentText ~active-gray" catchlongpress="showSelect">
+            {{articleData.contentText}}
+        </view>
+        <!-- 图片内容 -->
+        <view class="picture-out">
+
+            <!-- 这里放图片slot -->
+            <slot name='picture'></slot>
+
+        </view>
+        <!-- 底部信息及按钮 -->
+        <view class="bottomStyle">
+            <!-- 发布日期 -->
+            <view class="center">
+                <yy-date-item date = '{{articleData.date}}'/>
+                
+            </view>
+            <!-- 可见/不可见按钮 -->
+            <view></view>
+            <!-- 删除按钮 -->
+            <view class="deleteBtn ~active-gray" catchtap="deleteBtn">删除</view>
+            <!-- 点赞评论展开按钮 -->
+            <view class="amRight">
+                <view class="good-comments-btn-out" animation='{{showBtnAm}}'>
+                    <view class="good-comment-btn">
+                        <!-- 按钮三角 -->
+                        <view class="good-comment-btn-triangle"></view>
+                        <!-- 点赞评论按钮 -->
+                        <view class="good-comment-flex">
+                            <!-- 点赞按钮 -->
+                            <view class="~iconfont good-comment-flex-good" bindtap="userGood"> 
+                            <text wx:if='{{!selfGood}}'> 赞</text>
+                            <text wx:else> 取消</text>
+                            
+                            </view>
+                            <!-- 评论按钮 -->
+                            <view class="~iconfont good-comment-flex-comment" bindtap="userComment"> 评论</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <!-- 点赞/评论按钮 -->
+            <view class="goodBtn" bindtap="showGoodCommentBtn">
+                <view class="goodBtnDot"></view>
+                <view class="goodBtnDot"></view>
+            </view>
+        </view>
+    </view>
+</view>

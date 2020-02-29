@@ -1,0 +1,182 @@
+.pyqItem {
+    display: flex;
+    padding: 27rpx;
+    box-sizing: border-box;
+}
+
+.pyq-right {
+    flex: 1;
+}
+
+/* 头像样式 */
+
+.avatarStyle {
+    width: 85rpx;
+    height: 85rpx;
+    border-radius: 10rpx;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-right: 20rpx;
+}
+
+/* 用户昵称样式 */
+
+.userNickNameStyle {
+    display: inline-block;
+    color: var(--blue);
+    font-weight: 400;
+    font-size: 30rpx;
+}
+
+/* 朋友圈文本样式 */
+
+.pyqContentText {
+    margin-top: 10rpx;
+    margin-bottom: 0rpx;
+    line-height: 40rpx;
+    font-size: 30rpx;
+}
+
+
+
+
+/* 底部栏样式 */
+
+.bottomStyle {
+    display: flex;
+    align-items: center;
+    margin-top: 20rpx;
+}
+
+
+
+/* 删除按钮样式 */
+
+.deleteBtn {
+    color: var(--blue);
+    font-size: 25rpx;
+    margin-left: 30rpx;
+}
+
+
+/* 点赞/评论按钮样式 */
+.goodBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--grayLight);
+    width: 70rpx;
+    height: 45rpx;
+    border-radius: 10rpx;
+}
+
+.goodBtn:active {
+    background-color: var(--grayActive);
+}
+
+.goodBtnDot {
+    margin: 4rpx;
+    width: 10rpx;
+    height: 10rpx;
+    border-radius: 50%;
+    background-color: var(--blue);
+}
+
+.bottomStyle>view:last-child {
+    margin-left: auto;
+}
+
+
+.good-comment-btn {
+    position: relative;
+    width: 320rpx;
+    height: 90rpx;
+    background-color: var(--blackLight);
+    border-radius: 10rpx;
+}
+
+.good-comment-btn-triangle {
+    position: absolute;
+    right: -30rpx;
+    top: 19rpx;
+    width: 0;
+    height: 0;
+    border-width: 22rpx;
+    border-style: solid;
+    border-color: transparent var(--blackLight) transparent transparent;
+    transform: rotate(180deg); /*顺时针旋转90°*/
+}
+
+/* 点赞评论按钮 */
+
+.good-comment-flex {
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.good-comment-flex>view {
+    color: white;
+    font-size: 28rpx;
+    /* 待修改 */
+    padding-top: 16rpx;
+    padding-bottom: 16rpx;
+    align-self: center;
+    flex: 1;
+    text-align: center;
+}
+
+.good-comment-flex>view:active {
+    background-color: var(--blackLight2);
+}
+
+.good-comment-flex>view:last-child {
+    border-left: var(--blackLight2) 1px solid;
+}
+
+/* 点赞评论-赞按钮 */
+
+.good-comment-flex-good::before {
+    position: relative;
+    bottom: -1rpx;
+    content: "\e653";
+    color: white;
+    font-size: 35rpx;
+}
+
+/* 点赞评论-评论按钮 */
+
+.good-comment-flex-comment::before {
+    position: relative;
+    bottom: -2rpx;
+    content: "\e64e";
+    color: white;
+    font-size: 35rpx;
+}
+
+/* 点赞评论按钮展开样式 */
+.good-comments-btn-out {
+    display: inline-block;
+    position: relative;
+    width: 0;
+    overflow: hidden;
+}
+
+.amRight {
+    position: absolute;
+    right: 120rpx;
+    text-align: right;
+}
+
+/* 解决因字体占位置问题 */
+.center{
+    font-size: 0;
+}
+
+
+/* 图片 */
+.picture-out{
+    /* margin-bottom: 35rpx; */
+}

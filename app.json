@@ -1,0 +1,14 @@
+{
+    "pages": [
+        "pages/WeChat/edit/edit",
+        "pages/WeChat/article/article"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "WeChat",
+        "navigationBarTextStyle": "black"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}

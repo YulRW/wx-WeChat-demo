@@ -1,0 +1,6 @@
+<!-- 长按弹出操作 -->
+<view class="longActiveSelect" animation='{{longActiveAm}}' style="top:{{showTop}};left:{{showLeft}};" catchtap>
+    <view>复制</view>
+    <view>删除</view>
+    <view>翻译</view>
+</view>

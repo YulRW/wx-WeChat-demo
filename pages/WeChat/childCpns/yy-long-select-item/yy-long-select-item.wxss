@@ -1,0 +1,23 @@
+/* 长按弹出 */
+.longActiveSelect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-color: white;
+    width: 0rpx;
+    height: 0rpx;
+    box-shadow: 0 0 20rpx 0rpx rgb(202, 202, 202);
+}
+
+.longActiveSelect>view {
+    height: 110rpx;
+    box-sizing: border-box;
+    padding-top: 30rpx;
+    padding-bottom: 30rpx;
+    padding-left: 30rpx;
+}
+
+.longActiveSelect>view:active {
+    background-color: var(--grayActive);
+}

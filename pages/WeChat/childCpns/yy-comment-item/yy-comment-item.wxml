@@ -1,0 +1,23 @@
+<!-- 用户评论ITEM -->
+<view class="CommentItem ~active-gray">
+    <!-- 评论用户头像 -->
+    <view class="commentAvatarStyle">
+        <open-data type='userAvatarUrl'></open-data>
+    </view>
+    <!-- 评论用户信息 -->
+    <view class="CommentItemRight">
+        <!-- 评论信息栏 -->
+        <view class="commentTop">
+            <!-- 用户昵称 -->
+            <view class="commentNickName">
+                <open-data type='userNickName'></open-data>
+            </view>
+            <!-- 评论时间 -->
+            <view class="commentDateStyle">
+            <yy-date-item data='{{user.date}}' />
+            </view>
+        </view>
+        <!-- 评论内容 -->
+        <view class="commentContentText ~active-gray">{{user.contentText}}</view>
+    </view>
+</view>

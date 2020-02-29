@@ -1,0 +1,58 @@
+/* 输入栏样式 */
+
+.input-flew {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    width: 100vw;
+    padding: 20rpx;
+    padding-left: 35rpx;
+    background-color: var(--grayLight);
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* 输入框外样式 */
+
+.input-view {
+    flex: 7;
+    /* 真机无效 */
+    caret-color: #07c160;
+    background-color: white;
+    padding: 20rpx;
+    border-radius: 10rpx;
+}
+
+/* 表情 */
+
+.emojiIcon {
+    /* flex:1; */
+    padding-left: 25rpx;
+    padding-right: 20rpx;
+    font-size: 0;
+}
+
+.emojiIcon::before {
+    content: "\e60b";
+    font-size: 55rpx;
+}
+
+/* 发送按钮 */
+
+.sentBtn {
+    /* flex: 1; */
+    padding: 25rpx;
+    padding-top: 10rpx;
+    padding-bottom: 10rpx;
+    text-align: center;
+    color: #c6c6c6;
+    border: #c6c6c6 1px solid;
+    border-radius: 10rpx;
+    font-size: 28rpx;
+}
+
+
+/* .input-view>input .input{
+    cursor-spacing:100px;
+} */
+

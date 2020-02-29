@@ -1,0 +1,47 @@
+<!-- 微信评论模块 -->
+<view class="mypyqComment" wx:if='{{commentData.commentUserList.length > 0 ||commentData.goodUserAvatarList != 0 ||selfGood }}'>
+    <!-- 三角形 -->
+    <view class="triangleStyle"></view>
+
+    <block wx:if='{{commentData.goodUserAvatarList != 0 || selfGood }}'>
+
+        <!-- 评论点赞栏 -->
+        <view class="goodContentStyle">
+            <!-- 点赞icon -->
+            <view class="goodContentLeftStyle ~iconfont">
+            </view>
+
+            <!-- 点赞用户 -->
+            <view class="goodUserList">
+                <block wx:for='{{goodUserList}}' wx:key='*this'>
+                    <view class="giveGoodUserItem">
+                        <image src="{{item}}" mode="widthFix"></image>
+                    </view>
+                </block>
+
+                <block wx:if='{{selfGood}}'>
+                    <view class="giveGoodUserItem myself-good">
+                        <open-data type='userAvatarUrl' class='open-data'></open-data>
+                    </view>
+                </block>
+            </view>
+        </view>
+    </block>
+
+    <block wx:if='{{commentData.commentUserList.length > 0 }}'>
+        <!-- 评论内容栏 -->
+        <view class="commentContentStyle ~iconfont">
+            <!-- 评论Icon -->
+            <!-- <view class="commentLeftStyle ~iconfont">
+        </view> -->
+            <!-- 评论用户列表 -->
+
+            <block wx:for='{{commentData.commentUserList}}' wx:key='contentText'>
+                <yy-comment-item user='{{item}}' catchlongpress="showSelect" />
+            </block>
+
+        </view>
+
+    </block>
+
+</view>

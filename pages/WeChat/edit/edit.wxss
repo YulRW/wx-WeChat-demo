@@ -1,0 +1,46 @@
+/* pages/funciton/edit/edit.wxss */
+
+.mar-l-r-40 {
+    margin-left: 40rpx;
+    margin-right: 40rpx;
+}
+
+
+.content-edit{
+    margin-top: 40rpx;
+    margin-bottom: 100rpx;
+}
+
+.content-text{
+    width: 100%;
+}
+
+.content-text textarea{
+    width: 100%;
+    font-size: 30rpx;
+}
+
+.item-group {
+    /* border-top: 1px #eaeaea solid;
+    border-bottom: 1px #eaeaea solid; */
+
+    border-top: 1rpx #f1f1f1 solid;
+    border-bottom: 1rpx #f1f1f1 solid;
+}
+
+.item-group>yy-form-item :last-child .set-item-text {
+    border-bottom: 0px;
+}
+
+.send{
+    display: inline-block;
+    border-radius: 10rpx;
+    background-color: var(--green);
+    padding: 15rpx 30rpx;
+    color: white;
+}
+
+.send-out{
+    text-align: center;
+    padding: 50rpx;
+}

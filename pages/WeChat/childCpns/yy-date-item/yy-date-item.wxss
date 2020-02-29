@@ -1,0 +1,5 @@
+/* 内容底部日期样式 */
+.bottomDateStyle {
+    color: var(--gray);
+    font-size: 25rpx;
+}

@@ -1,0 +1,14 @@
+{
+  "usingComponents": {
+      "yy-article-item":"../childCpns/yy-article-item/yy-article-item",
+      "yy-comment-module":"../childCpns/yy-comment-module/yy-comment-module",
+      "yy-long-select-item":"../childCpns/yy-long-select-item/yy-long-select-item",
+      "yy-input-item":"../childCpns/yy-input-item/yy-input-item",
+      "yy-upLoader":"../childCpns/yy-upLoader/yy-upLoader"
+      
+  },
+  "navigationBarTitleText":"详情",
+  "navigationBarTextStyle":"black",
+  "navigationBarBackgroundColor":"#ededed",
+  "enablePullDownRefresh":false
+}

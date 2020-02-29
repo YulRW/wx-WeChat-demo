@@ -1,0 +1,8 @@
+<!-- 放链接 -->
+<view class="set-item ~iconfont {{finish?'green':''}}" >
+    <view class="set-item-text {{arrow?'arrow':''}} icon-{{icon}}">
+        {{title}}
+
+        <text class="right-text">{{rightText}}</text>
+    </view>
+</view>

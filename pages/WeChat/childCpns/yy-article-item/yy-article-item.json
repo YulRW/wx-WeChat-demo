@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "yy-upLoader": "../yy-upLoader/yy-upLoader",
+        "yy-date-item": "../yy-date-item/yy-date-item"
+    }
+}

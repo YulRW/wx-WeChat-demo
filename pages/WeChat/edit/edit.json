@@ -1,0 +1,10 @@
+{
+    "usingComponents": {
+        "yy-form-item":"../childCpns/yy-form-item/yy-form-item",
+        "yy-upLoader":"../childCpns/yy-upLoader/yy-upLoader"
+    },
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "发表",
+    "enablePullDownRefresh": false
+}

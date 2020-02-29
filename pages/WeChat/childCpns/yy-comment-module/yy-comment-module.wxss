@@ -1,0 +1,95 @@
+/* pyq评论样式 */
+
+.mypyqComment {
+    position: relative;
+    margin: 27rpx; /*边距离*/
+    margin-bottom: 190rpx;
+    background-color: var(--grayLight);
+    box-sizing: border-box;
+}
+
+/* 三角形样式 */
+
+.triangleStyle {
+    position: absolute;
+    top: -35rpx;
+    left: 14rpx;
+    width: 0;
+    height: 0;
+    border-width: 22rpx;
+    border-style: solid;
+    border-color: transparent var(--grayLight) transparent transparent;
+    transform: rotate(90deg); /*顺时针旋转90°*/
+}
+
+/* 评论点赞栏样式 */
+
+.goodContentStyle {
+    display: flex;
+    padding: 10rpx 7rpx 15rpx 0;
+    border-bottom: 1px white solid;
+}
+
+/* 点赞用户列表 */
+
+.goodUserList {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0;
+}
+
+/* 点赞用户Item */
+
+.giveGoodUserItem {
+    padding: 6rpx;
+}
+
+.goodUserList image {
+    width: 60rpx;
+    height: 60rpx;
+    border-radius: 8rpx;
+}
+
+.myself-good {
+    overflow: hidden;
+    width: 60rpx;
+    height: 60rpx;
+    box-sizing: content-box;
+    border-radius: 25rpx;
+}
+
+.open-data{
+    height: 100%;
+    width: 100%;
+}
+
+/* 点赞内容侧边栏 */
+
+.goodContentLeftStyle {
+    align-items: center;
+    line-height: 74rpx;
+    padding: 0 12rpx 0 19rpx;
+}
+
+.goodContentLeftStyle::before {
+    content: "\e653";
+    color: var(--blue);
+    font-size: 30rpx;
+}
+
+/* 评论样式 */
+.commentContentStyle{
+    position: relative;
+}
+
+/* 评论内容左侧栏样式 */
+.commentContentStyle::before {
+    position: absolute;
+    content: "\e64e";
+    font-size: 26rpx;
+    top: 35rpx;
+    left: 20rpx;
+    color: var(--blue);
+    font-weight: bolder;
+}
+

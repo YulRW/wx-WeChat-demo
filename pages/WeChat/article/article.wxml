@@ -1,0 +1,24 @@
+<view class="page"  bindtouchstart="clearEvenTouch" >
+
+
+    <!-- 文章内容模块 -->
+    <yy-article-item articleData='{{pageData.article}}' bindshowSelect="showSelect" bindcomment='clickComment' bindselfGood='clickGood'>
+        <block wx:if='{{pageData.article.pictureList != 0}}'>
+            <yy-upLoader slot='picture' show files="{{pageData.article.pictureList}}">
+            </yy-upLoader>
+
+        </block>
+
+    </yy-article-item>
+
+    <!-- 文章评论模块 -->
+    <yy-comment-module bindshowSelect="showSelect" commentData='{{pageData.comment}}' self-good='{{selfGood}}'/>
+
+    <!-- 长按展开模块 -->
+    <yy-long-select-item coordinate='{{coordinate}}' hidden="{{longSelectHidden}}" />
+
+    <!-- input模块 -->
+    <yy-input-item focus='{{isFocus}}' bindinputMsg='getComment'/>
+
+
+</view>

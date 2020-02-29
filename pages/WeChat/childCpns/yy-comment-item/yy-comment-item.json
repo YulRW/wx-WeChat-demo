@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "yy-date-item": "../yy-date-item/yy-date-item"
+    }
+}

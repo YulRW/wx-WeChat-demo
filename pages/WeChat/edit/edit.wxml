@@ -1,0 +1,43 @@
+<view class="page">
+
+    <view class="mar-l-r-40 content-edit">
+        <!-- 文本输入框 -->
+        <view class="content-text">
+            <textarea placeholder="随便写点什么吧..." bindinput='getText' maxlength='-1'></textarea>
+        </view>
+        <!-- 图片 -->
+        <view>
+            <yy-upLoader bindupLoader='getFiles' files='{{pageData.article.pictureList}}'/>
+        </view>
+    </view>
+
+    <!-- 预设置 -->
+    <view class="mar-l-r-40 item-group">
+
+        <picker mode="multiSelector" bindchange="getGoodNum" value="{{pickerNum.multiIndex}}" range="{{multiArray}}">
+
+            <yy-form-item title='点赞数量' icon='good' arrow right-text='{{pageData.comment.goodUserAvatarList}}' finish='{{status.item1}}' />
+        </picker>
+
+        <picker mode='date' value='0' start='2010-01-01' end='2020-12-31' fields='day' bindchange='getDate'>
+
+            <yy-form-item title='添加日期' icon='date' arrow right-text='{{pageData.article.date.date}}' finish='{{status.item2}}' />
+        </picker>
+
+        <picker mode='time' bindchange='getTime'>
+            <yy-form-item title='添加时间' icon='time' arrow right-text='{{pageData.article.date.time}}' finish='{{status.item3}}' />
+
+        </picker>
+        <yy-form-item title='添加链接' icon='link' arrow bindtap='getLink' finish='{{status.item4}}' />
+
+    </view>
+
+    <view class="send-out">
+        <view class="send" bindtap="send">发 表</view>
+
+    </view>
+
+
+
+
+</view>

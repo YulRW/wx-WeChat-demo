@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "yy-comment-item":"../yy-comment-item/yy-comment-item"
+    }
+}

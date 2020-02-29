@@ -1,0 +1,2 @@
+<text class="bottomDateStyle">{{date.date||nowDate}} </text>
+<text class="bottomDateStyle">{{date.time||nowTime}}</text>
