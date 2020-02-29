@@ -22,9 +22,8 @@
             <view class="weui-uploader__file" bindtap="previewImage" id="{{files[3]}}">
                 <image class="weui-uploader__img" src="{{files[3]}}" mode="aspectFill" />
             </view>
-
-
         </block>
+        
         <block wx:else>
 
             <block wx:for="{{files}}" wx:key="*this">

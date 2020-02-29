@@ -4,7 +4,7 @@
     <!-- 文章内容模块 -->
     <yy-article-item articleData='{{pageData.article}}' bindshowSelect="showSelect" bindcomment='clickComment' bindselfGood='clickGood'>
         <block wx:if='{{pageData.article.pictureList != 0}}'>
-            <yy-upLoader slot='picture' show files="{{pageData.article.pictureList}}">
+            <yy-upLoader slot='picture' show filesData="{{pageData.article.pictureList}}">
             </yy-upLoader>
 
         </block>

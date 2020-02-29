@@ -3,11 +3,11 @@
     <view class="mar-l-r-40 content-edit">
         <!-- 文本输入框 -->
         <view class="content-text">
-            <textarea placeholder="随便写点什么吧..." bindinput='getText' maxlength='-1'></textarea>
+            <textarea placeholder="随便写点什么吧..." bindinput='getText' maxlength='-1' value="{{textareaValue}}"></textarea>
         </view>
         <!-- 图片 -->
         <view>
-            <yy-upLoader bindupLoader='getFiles' files='{{pageData.article.pictureList}}'/>
+            <yy-upLoader bindupLoader='getFiles' clearFiles='{{isClear}}'/>
         </view>
     </view>
 

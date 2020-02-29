@@ -99,7 +99,9 @@ Page({
             item2: false,
             item3: false,
             item4: false
-        }
+        },
+        textareaValue:'',
+        isClear:false
     },
     clearEdit() {
         this.setData({
@@ -116,7 +118,13 @@ Page({
 
             'pageData.article.contentText':'不写点东西吗？...^_^',
 
+            'textareaValue':'',
 
+            'isClear':true
+
+        })
+        this.setData({
+            isClear:false
         })
     },
     getText(e) {
@@ -129,7 +137,6 @@ Page({
         array = array.reduce((pre, cur) => {
             return '' + pre + cur
         })
-        // console.log(Number(array))
         this.setData({
             'pageData.comment.goodUserAvatarList': Number(array),
             'status.item1': true
@@ -143,8 +150,7 @@ Page({
 
     },
     onShow(){
-        this.clearEdit()
+        this.clearEdit();
     },
-
 
 })

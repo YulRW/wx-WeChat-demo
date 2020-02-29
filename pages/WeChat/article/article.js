@@ -92,6 +92,6 @@ Page({
         options.data && this.setData({
             pageData: JSON.parse(options.data)
         })
-        // console.log(options)
+        console.log(this.data.pageData)
     },
 })

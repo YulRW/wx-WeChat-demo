@@ -4,13 +4,29 @@ Component({
      * 组件的属性列表
      */
     properties: {
-        files: {
+        filesData: {
             type: Array,
-            value: []
+            value: [],
+            observer:function(newVal,oldVal){
+                this.setData({
+                    files:newVal
+                })
+            }
         },
         show: {
             type: Boolean,
             value: false
+        },
+        clearFiles:{
+            type:Boolean,
+            value:false,
+            observer:function(newVal,oldVal){
+                if(newVal){
+                    this.setData({
+                        files:[]
+                    })
+                }
+            }
         }
     },
 
